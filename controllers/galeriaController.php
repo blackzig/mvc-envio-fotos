@@ -1,12 +1,16 @@
 <?php
-class galeriaController{
+class galeriaController extends controller{
 
     public function index(){
-        echo'página da galeria';
-    }
+        $height = 925;
+        $width = 618;
+        $dados = array(
+            'url'=>'http://plataformageek.net/wp-content/uploads/2015/02/00.jpg',
+            'alt'=>'foto da Cammy de costas',
+            'height'=>$height,
+            'width'=>$width
+        );
 
-    public function abrir($id){
-        echo'abrir a galeria '.$id;
+        $this->loadTemplate('galeria',$dados);
     }
-
 }
