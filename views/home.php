@@ -8,5 +8,7 @@
 </head>
 <body>
     <h1>Olá <?php echo $nome; ?></h1>
+    <?php echo $quantidade."<br/>" ?>
+    <?php echo $idade; ?>
 </body>
 </html>
