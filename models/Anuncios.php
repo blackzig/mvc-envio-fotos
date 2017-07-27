@@ -2,7 +2,7 @@
 class Anuncios extends model{
 
     public function getQuantidade(){
-        $sql = "SELECT COUNT(*) FROM anuncios";
+   /*     $sql = "SELECT COUNT(*) FROM anuncios";
         $sql = $this->db->query($sql);
 
         if($sql->rowCount() > 0){
@@ -10,7 +10,9 @@ class Anuncios extends model{
             return $sql[0];
         }else{
             return 0;
-        }
+        }*/
+
+        return 0;
     }
 
 }
